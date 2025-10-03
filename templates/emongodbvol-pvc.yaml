@@ -6,7 +6,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: gp2 
+  storageClassName: argocd-storage
   resources:
     requests:
       storage: 500Mi
