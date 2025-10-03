@@ -5,8 +5,8 @@ metadata:
   name: {{ .Release.Name }}-{{ .Chart.Name }}-mysql
 spec:
   accessModes:
-    - ReadWriteMany
-  storageClassName: pod-nfs-storage 
+    - ReadWriteOnce
+  storageClassName: gp2 
   resources:
     requests:
       storage: 500Mi
